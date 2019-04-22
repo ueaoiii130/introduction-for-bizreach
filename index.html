@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Sakaue Aoi</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!--    <link rel="stylesheet" type="text/css" href="normalize.css">-->
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<!--  jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    
+    <script type="text/javascript">
+        $(function(){
+            $("a[href^=#page-bottom]").click(function(){
+                $('html, body').animate({
+                  scrollTop: $(document).height()
+                },1500);
+                return false;
+            });
+        });
+    </script>
+    
+    
+    
+    
+
+</head>
+<body>
+  <header>
+      <div class="hero">
+             
+             <div class="name">
+              <h1>Sakaue Aoi</h1>
+              
+              <div class="scroll_button_btm">
+                    <a href="#page-bottom">All aboard!</a>
+                </div>
+            </div>
+            
+           
+       </div>
+<!--
+       
+        <div class="scroll_button_btm">
+                <a href="#page-bottom">All aboard!</a>
+        </div>
+-->
+      
+  </header>
+  
+  <div id="border-top" style="height: 8px;opacity: 1;"></div>
+  <div id="border-right" style="height: 8px;opacity: 1;"></div>
+  <div id="border-left" style="height: 8px;opacity: 1;"></div>
+  <div id="border-bottom" style="height: 8px;opacity: 1;"></div>
+  
+  
+  
+  <div class="contact">
+     
+      <a href="https://twitter.com/ueaoiii130" target="_blank">twitter</a>
+      <a href="https://www.facebook.com/ueao.saka" target="_blank">facebook</a>
+      <a href="https://www.instagram.com/ue.w.ao/" target="_blank">Instagram</a>
+      <a href="https://github.com/ueaoiii130" target="_blank">dribbble</a>
+      <a href="https://github.com/ueaoiii130" target="_blank">github</a>
+      
+  </div> <!-- contact  -->
+    
+<!--
+    <nav> 
+        <ul>
+            <li><a href="#work">work</a></li>
+            <li><a href="#bio">bio</a></li>
+        </ul> 
+    </nav>
+-->
+       
+    
+    
+    <div class="work">
+    
+         <section class="vision">
+              <img src="/assets/vision.png" alt="vision">
+          </section>
+          
+
+          
+          <section class="she">
+              <img src="/assets/she.png" alt="she">
+            
+          </section>
+          
+          <section class="lips">
+              <img id="lips-bg" src="/assets/lips.png" alt="lips">
+              
+              <div class="sa sa-up" id="lips01">
+                  <img src="/assets/lips-cr-01.png" alt="papers">
+              </div>
+              <div class="sa sa-up" id="lips02">
+                  <img src="/assets/lips-cr-02.png" alt="papers">
+              </div>
+          </section>
+          
+          
+          <section class="nazo">
+              <img src="/assets/nazo@4x.png" alt="nazo">
+            
+          </section>
+          
+          <section class="re">
+              <img src="/assets/re.png" alt="re">
+              <div class="sa sa-up">
+                  <img src="/assets/re-papers.png" alt="papers">
+              </div>
+          </section>
+          
+          <section class="start">
+              <img src="assets/start@2x.png" alt="start">
+              
+              <div class="bording">
+                  <img src="assets/jet.png" alt="jet"> 
+              </div>
+              
+              
+          </section>
+          
+          
+
+          
+           <section class="bio">
+              <img src="/assets/my-bio.png" alt="bio">
+              <br>
+              
+              <div class="career">
+                <h2>Career</h2>
+                  <p>
+                      2019 - 　　　　<a href="https://www.bizreach.co.jp/" target="_blank">BizReach Inc.</a>デザイナー<br>
+                      2015 - 2018 　首都大学東京 都市教養学部 人文社会学系 修了<br>
+                      2012 - 2015 　桐蔭学園高等学校 卒業 <br>
+                  </p> 
+              </div>
+              
+              <div class="internship">
+                 <h2>Internship</h2>
+                  <p>
+           2016 - 2019 　<a href="https://life-is-tech.com/" target="_blank">Life is Tech!</a> にて大学生メンターとして中高生にデザイン、iOSプログラミングを教える。
+           <br>
+           2018 - 2019 　<a href="https://she-inc.jp/" target="_blank">SHE inc.</a> にてコンテンツ運営、講師、コミュニティ運営担当として関わる。
+           <br>
+           2018  　　　　  <a href="https://lipscosme.com/" target="_blank">LIPS</a>にてマーケチームのデザイナー。
+           <br>
+           2017  　　　　  <a href="https://goodpatch.com/ja/" target="_blank">GoodPatch</a>にてコンテンツマーケチームのライターとしてインターン。Goodpatch blog is <a href="https://goodpatch.com/blog/" target="_blank">here!!</a>
+           <br>
+                 <br>
+                  </p> 
+                  
+              </div>
+              
+          </section><!--bio-->  
+
+        
+        <section class="about">
+              <img src="/assets/about.png" alt="about">
+          </section>          
+          
+          
+          
+            
+    </div>
+    
+    
+    
+    
+    <footer>
+       <small>
+           © Aoi Sakaue 2019
+       </small>
+    </footer>
+    
+    
+    <script>
+    
+        var scrollAnimationElm = document.querySelectorAll('.sa');
+        var scrollAnimationFunc = function() {
+          for(var i = 0; i < scrollAnimationElm.length; i++) {
+            var triggerMargin = 200;
+            if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+              scrollAnimationElm[i].classList.add('show');
+            }
+          }
+        }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+        
+        
+    </script>
+</body>
+</html>
